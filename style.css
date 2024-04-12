@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.custom-body{
+    background-color: #FFFEC4;
+}
+
+.custom-bg-navbar{
+    background-color: #CBFFA9;
+}
+
+.container-fluid .navbar-brand{
+    color: #12372A;
+}
+
+.container-fluid img{
+    width: 5%;
+    height: 5%;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.col-md-6 h1{
+    font-weight: bold;
+}
+
+.col-md-6 h3{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.col-md-6 a{
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+}
+
+.description h1{
+    color: #496989;
+}
+
+.d-flex{
+    margin: 0px 0px 0px 16px;
+}
+
+/* Detail Event */
+.title-events{
+    text-align: center;
+    color: #496989;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.img-fluid{
+    border-radius: 20px;
+}
+
+/* CAROUSEL */
+
+.event-title{
+    font-weight: bold;
+}
+
+.event-title span{
+    color: #496989;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item p{
+    color: #FF9B9B;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#carouselExampleCaptions{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* TIMELINE */
+.timelines{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #001B79;
+}
+
+.header-timeline{
+    letter-spacing: 10px;
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    color: #496989;
+}
+
+.timeline-items{
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 85.333%;
+    background-color: black;
+    left: calc(50% + 4px);
+}
+
+.timeline-border{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.timeline-dot{
+    height: 40px;
+    width: 40px;
+    background-color: #0EB0DD;
+    position: absolute;
+    border-radius: 100%;
+    left: calc(50% - 13px);
+}
+
+.timeline-item{
+    margin-bottom: 126px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 45px);
+    text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 60px);
+}
+
+.timeline-item:nth-child(4){
+    margin-bottom: 53px;
+}
+
+.timeline-date{
+    color: #001B79;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.btn-times{
+    color: white;
+    border-radius: 30px;
+    background-color: #001B79;
+    height: 80px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 25.42px;
+    border: 5px solid white;
+}
+
+.btn-time{
+    color: white;
+    border-radius: 40px;
+    background-color: #001B79;
+    height: 69px;
+    width: 450px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: end;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 32.75px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-time:hover{
+    color: black;
+    background: linear-gradient(to right, #89CFF3, #89CFF3, white);
+    box-shadow: inset 0 0 40px 2px rgb(138, 227, 247);
+    border: 2px solid #001B79;
+    transition: all .5s ease-in-out;
+}
+
+.btn-time:nth-child(odd){
+    margin-left: auto;
+}
+
+.btn-time:nth-child(even){
+    margin-right: auto;
+}
+
+#myForm h1{
+    text-align: center;
+}
+
+.error-message{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#carouselSpeakers{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* REGISTER */
+.title-regis{
+    color: #496989;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 25px 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer-content {
+    justify-content: center;
+    display: flex;
+}
+
+.title-contact h1{
+    display: flex;
+    justify-content: center;
+    color: #496989;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+.card i{
+    padding: 0px 10px 0px 0px;
+}
+
+.card h5{
+    color: #D20062;
+    font-weight: 550;
+}
+
+.footer-content span{
+    font-weight: bold;
+    color: #496989;
+}

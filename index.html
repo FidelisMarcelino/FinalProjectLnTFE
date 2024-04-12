@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Link BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link CSS -->
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="custom-body">
+
+    <!-- LANDING PAGE -->
+    <nav class="navbar navbar-expand-lg custom-bg-navbar fixed-top">
+        <div class="container-fluid">
+          <img src="Asset/Logo Pudding Fest.png" alt="">
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#About">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Contact">Contact Us</a>
+              </li>
+            </ul>
+            
+            <a href="#myForm" class="d-flex btn btn-outline-success">Register</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Deskripsi Kegiatan -->
+      <section class="container mt-5" id="Home">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <!-- Logo Kegiatan -->
+                <img src="Asset/Logo Pudding Fest.png" alt="Logo Acara" class="img-fluid">
+            </div>
+
+            <div class="col-md-6 description" style="text-align: justify;">
+                <!-- Deskripsi -->
+                <h1>Pudding Fest 2024</h1>
+                <h3>Digital Odyssey: Navigating the Future</h3>
+                <p>PuddingFest is an annual event held by PT ChipiChapa, where well-known companies in Indonesia will showcase their latest technologies online. This event offers a series of presentations from each company, giving participants the opportunity to gain insight into the latest innovations in the world of technology and interact with representatives of participating companies.</p>
+                
+                <a href="#myForm" class="btn btn-success mt-3">Register</a>
+            </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- EVENT PAGE -->
+      <section class="container mt-5" id="About">
+        <!-- Rangkaian Acara -->
+
+        <h1 class="title-events">OUR EVENTS</h1>
+
+        <section class="container mt-5">
+          <div class="row align-items-center">
+              <div class="col-md-6 mb-5">
+                  <!-- Foto Kegiatan -->
+                  <img src="Asset/Acara 2.gif" alt="Logo Acara" class="img-fluid">
+              </div>
+  
+              <div class="col-md-6 description" style="text-align: justify;">
+                  <!-- Deskripsi -->
+                  <h1>Start Designing User Friendly Interface Using Figma</h1>
+                  <p>This event provides participants with a chance to boost their UI design skills with Figma, exploring effective principles, innovative techniques, and knowledge sharing with professionals. With a focus on project-based learning and dynamic interaction, it aims to inspire and empower attendees in creating impressive interface designs.
+                  </p>
+              </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-md-6 description" style="text-align: justify;">
+                <!-- Deskripsi -->
+                <h1>TechInsight Summit with Flutter</h1>
+                <p>This is an event that combines various technology insights with a focus on the Flutter development platform. Participants will be invited to understand various perspectives on using Flutter for cross-platform application development, as well as share knowledge and experience with industry experts and professionals. With interactive sessions and in-depth discussions, this event aims to provide deep insight into the potential and best practices in development using Flutter, so that participants can optimize the use of this technology in their projects.
+                </p>
+            </div>
+
+            <div class="col-md-6 mb-5">
+              <!-- Foto Kegiatan -->
+              <img src="Asset/Acara 1.gif" alt="Logo Acara" class="img-fluid">
+          </div>
+
+          <section class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-5">
+                    <!-- Foto Kegiatan -->
+                    <img src="Asset/Acara 3.gif" alt="Logo Acara" class="img-fluid">
+                </div>
+    
+                <div class="col-md-6 description" style="text-align: justify;">
+                    <!-- Deskripsi -->
+                    <h1>SQL Dive: Unlocking Data Insights</h1>
+                    <p>"SQL Dive: Unlocking Data Insights" is an event that invites participants to understand more deeply about the SQL (Structured Query Language) programming language and how to use it to extract insights from data. Through interactive sessions, participants will learn about basic SQL concepts, complex queries, and best practices in analyzing data. This event is aimed at beginners and professionals who want to improve their skills in managing and analyzing data using SQL.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <hr>
+
+        <!-- Carousel Acara sebelumnya -->
+        <h2 class="text-center mb-4 mt-5 event-title">Our Past <span>Events</span>
+        </h2>
+
+        <div id="carouselExampleCaptions" class="carousel slide mt-5 mb-5">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="overlay"></div>
+              <img src="Asset/Foto 1.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Pudding Fest 2021</h2>
+                <p>Reimagining Connectivity</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="Asset/Foto 1.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Pudding Fest 2022</h2>
+                <p>Sustainability in Innovation</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="Asset/Foto 1.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Pudding Fest 2023</h2>
+                <p>Empowering Digital Communities</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Carousel Pembicara Sebelumnya -->
+        <h2 class="text-center mb-4 event-title">Our Last <span>Speakers</span></h2>
+
+        <div id="carouselSpeakers" class="carousel slide mt-5 mb-5">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselSpeakers" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+            <button type="button" data-bs-target="#carouselSpeakers" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            
+            <button type="button" data-bs-target="#carouselSpeakers" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="overlay"></div>
+              <img src="Asset/Person.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>John Doe</h2>
+                <p>Software Engineer Tokopedia</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="Asset/Person.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>John Doe</h2>
+                <p>Data Analyst Gojek</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="Asset/Person.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>John Doe</h2>
+                <p>IT Project Manager Google</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSpeakers" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSpeakers" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timelines" id="Timeline">
+          <h1 class="header-timeline">TIMELINE</h1>
+  
+          <div class="timeline-items">
+
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">24 Juni 2024</div>
+                  <div class="btn-times" style="margin-left: calc(40% - 80px);">Open Registration</div>
+              </div>
+              
+  
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">8 Juli 2024</div>
+                  <div class="btn-times">Close Registration</div>
+              </div>
+  
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">15 Juli 2024</div>
+                  <a href="https://zoom.us/" class="btn-time">Technical Meeting</a>
+              </div>
+  
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <h1 class="timeline-date">17 Juli 2024</h1>
+                  <a href="https://zoom.us/" class="btn-time">Exhibition Day</a>
+              </div>
+          </div>
+      </div>
+        
+      <!-- Form Regis -->
+      <form class="row g-3 mt-3" action="" id="myForm">
+
+        <h1 class="title-regis">Regis Now!</h1>
+
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="Input your first name" required>
+          <div class="error-message" id="error-first"></div>
+
+          <div class="invalid-feedback">
+            Please enter your first name
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Input your last name" required>
+          <div class="error-message" id="error-last"></div>
+
+          <div class="invalid-feedback">
+            Please enter your last name
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label">Email</label>
+          <input type="email" class="form-control" id="validationDefault03" placeholder="Input your email" required>
+          <div class="error-message" id="error-email"></div>
+
+          <div class="invalid-feedback">
+            Please enter your email
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">Date of Birth</label>
+          <input type="date" class="form-control" id="validationDefault05" required>
+
+          <div class="invalid-feedback">
+            Please enter your date of birth
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationDefault06" class="form-label">Phone Number</label>
+          <input type="number" class="form-control" id="validationDefault06" placeholder="Input your phone number" required>
+          <div class="error-message" id="error-phone"></div>
+
+          <div class="invalid-feedback">
+            Please enter your phone number
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">City</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Jakarta</option>
+            <option>Surabaya</option>
+            <option>Bandung</option>
+            <option>Malang</option>
+            <option>Yogyakarta</option>
+            <option>Bekasi</option>
+            <option>Bali</option>
+            <option>Solo</option>
+            <option>Lainnya...</option>
+          </select>
+
+          <div class="invalid-feedback">
+            Please choose your city
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">Choose Time</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>09.20-11.00</option>
+            <option>13.20-15.00</option>
+            <option>17.20-19.00</option>
+          </select>
+
+          <div class="invalid-feedback">
+            Please choose your time
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+          
+        </div>
+        <div class="col-12 mb-5">
+          <button type="submit" class="btn btn-success" onclick="validateForm(event)" onclick="submitData()">Submit</button>
+        </div>
+      </form>
+      </section>
+
+      <hr>
+
+      <!-- Contact Us -->
+      <section id="Contact">
+        <div class="title-contact mt-5">
+          <h1>Contact Us</h1>
+        </div>
+  
+        <div class="row mt-3 mb-5 contact">
+          <div class="col-md-4 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">John Doe</h5>
+                <p class="card-text"><i class="fa-solid fa-phone"></i> 081243075520</p>
+                <p class="card-text"><i class="fa-solid fa-envelope"></i> john.doe@gmail.com</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">John Doe</h5>
+                <p class="card-text"><i class="fa-solid fa-phone"></i> 081243075520</p>
+                <p class="card-text"><i class="fa-solid fa-envelope"></i> john.doe@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <hr>
+      <footer class="container">
+        <div class="container footer-content">
+          <p>&copy; 2024 PT ChipiChapa. All rights reserved. Designed with <span class="text-danger">&hearts;</span> by <span>PuddingFest's Teams</span></p>
+        </div>
+      </footer>
+</body>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/1700c680e1.js" crossorigin="anonymous"></script>
+
+</html>
