@@ -92,16 +92,6 @@
 }
 
 /* TIMELINE */
-.timelines{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 62px;
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #001B79;
-}
-
 .header-timeline{
     letter-spacing: 10px;
     font-size: 70px;
@@ -112,7 +102,6 @@
 
 .timeline-items{
     position: relative;
-    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -162,7 +151,6 @@
 .timeline-item:nth-child(4){
     margin-bottom: 53px;
 }
-
 .timeline-date{
     color: #001B79;
     font-size: 40px;
@@ -174,7 +162,6 @@
     border-radius: 30px;
     background-color: #001B79;
     height: 80px;
-    width: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,7 +176,6 @@
     border-radius: 40px;
     background-color: #001B79;
     height: 69px;
-    width: 450px;
     padding: 10px 30px;
     display: flex;
     align-items: center;
@@ -208,14 +194,6 @@
     box-shadow: inset 0 0 40px 2px rgb(138, 227, 247);
     border: 2px solid #001B79;
     transition: all .5s ease-in-out;
-}
-
-.btn-time:nth-child(odd){
-    margin-left: auto;
-}
-
-.btn-time:nth-child(even){
-    margin-right: auto;
 }
 
 #myForm h1{
@@ -278,4 +256,240 @@ footer {
 .footer-content span{
     font-weight: bold;
     color: #496989;
+}
+
+@media screen and (max-width: 768px){
+    .header-timeline{
+        letter-spacing: 10px;
+        font-size: 70px;
+        font-weight: 900;
+        margin-bottom: 50px;
+        color: #496989;
+    }
+    
+    .timeline-items{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .timeline-items::before{
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 83%;
+        background-color: black;
+        left: calc(50% + 4px);
+    }
+    
+    .timeline-border{
+        padding: 10px 50px;
+        position: relative;
+        width: 50%;
+        background: white;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    
+    .timeline-dot{
+        height: 40px;
+        width: 40px;
+        background-color: #0EB0DD;
+        position: absolute;
+        border-radius: 100%;
+        left: calc(50% - 13px);
+    }
+    
+    .timeline-item{
+        margin-bottom: 200px;
+        width: 100%;
+        position: relative;
+    }
+    
+    .timeline-item:nth-child(odd){
+        padding-right: calc(50% + 45px);
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        padding-left: calc(50% + 60px);
+    }
+    
+    .timeline-item:nth-child(4){
+        margin-bottom: 53px;
+    }
+    .timeline-date{
+        color: #001B79;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    
+    .btn-times{
+        color: white;
+        border-radius: 30px;
+        background-color: #001B79;
+        height: 80px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        letter-spacing: 2px;
+        font-size: 25.42px;
+        border: 5px solid white;
+    }
+
+    .timeline-item a{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .timeline-item .btn-times{
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .btn-time{
+        color: white;
+        border-radius: 40px;
+        background-color: #001B79;
+        height: 100px;
+        width: 250px;
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: end;
+        font-weight: 800;
+        letter-spacing: 2px;
+        font-size: 32.75px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .btn-time:hover{
+        color: black;
+        background: linear-gradient(to right, #89CFF3, #89CFF3, white);
+        box-shadow: inset 0 0 40px 2px rgb(138, 227, 247);
+        border: 2px solid #001B79;
+        transition: all .5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 246px){
+    .header-timeline{
+        letter-spacing: 10px;
+        font-size: 70px;
+        font-weight: 900;
+        margin-bottom: 50px;
+        color: #496989;
+    }
+    
+    .timeline-items{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .timeline-items::before{
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 83%;
+        background-color: black;
+        left: calc(50% + 4px);
+    }
+    
+    .timeline-border{
+        padding: 10px 50px;
+        position: relative;
+        width: 50%;
+        background: white;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    
+    .timeline-dot{
+        height: 40px;
+        width: 40px;
+        background-color: #0EB0DD;
+        position: absolute;
+        border-radius: 100%;
+        left: calc(50% - 13px);
+    }
+    
+    .timeline-item{
+        margin-bottom: 200px;
+        width: 100%;
+        position: relative;
+    }
+    
+    .timeline-item:nth-child(odd){
+        padding-right: calc(50% + 45px);
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        padding-left: calc(50% + 60px);
+    }
+    
+    .timeline-item:nth-child(4){
+        margin-bottom: 53px;
+    }
+    .timeline-date{
+        color: #001B79;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    
+    .btn-times{
+        color: white;
+        border-radius: 30px;
+        background-color: #001B79;
+        height: 80px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        letter-spacing: 2px;
+        font-size: 25.42px;
+        border: 5px solid white;
+    }
+
+    .timeline-item a{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .timeline-item .btn-times{
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .btn-time{
+        color: white;
+        border-radius: 40px;
+        background-color: #001B79;
+        height: 100px;
+        width: 250px;
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: end;
+        font-weight: 800;
+        letter-spacing: 2px;
+        font-size: 32.75px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .btn-time:hover{
+        color: black;
+        background: linear-gradient(to right, #89CFF3, #89CFF3, white);
+        box-shadow: inset 0 0 40px 2px rgb(138, 227, 247);
+        border: 2px solid #001B79;
+        transition: all .5s ease-in-out;
+    }
 }
