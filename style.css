@@ -261,7 +261,7 @@ footer {
 @media screen and (max-width: 768px){
     .header-timeline{
         letter-spacing: 10px;
-        font-size: 70px;
+        font-size: 55px;
         font-weight: 900;
         margin-bottom: 50px;
         color: #496989;
@@ -272,14 +272,18 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .timeline-item .timeline-date{
+        font-size: 25px;
+    }
     
     .timeline-items::before{
         content: '';
         position: absolute;
         width: 5px;
-        height: 83%;
+        height: 85%;
         background-color: black;
-        left: calc(50% + 4px);
+        left: calc(53%);
     }
     
     .timeline-border{
@@ -298,7 +302,7 @@ footer {
         background-color: #0EB0DD;
         position: absolute;
         border-radius: 100%;
-        left: calc(50% - 13px);
+        left: calc(52% - 13px);
     }
     
     .timeline-item{
@@ -329,13 +333,13 @@ footer {
         border-radius: 30px;
         background-color: #001B79;
         height: 80px;
-        width: 250px;
+        width: 120px;
         display: flex;
         align-items: center;
         justify-content: center;
         font-weight: 800;
         letter-spacing: 2px;
-        font-size: 25.42px;
+        font-size: 12px;
         border: 5px solid white;
     }
 
@@ -353,8 +357,8 @@ footer {
         color: white;
         border-radius: 40px;
         background-color: #001B79;
-        height: 100px;
-        width: 250px;
+        height: 80px;
+        width: 120px;
         padding: 10px 30px;
         display: flex;
         align-items: center;
@@ -362,7 +366,7 @@ footer {
         text-align: end;
         font-weight: 800;
         letter-spacing: 2px;
-        font-size: 32.75px;
+        font-size: 16px;
         cursor: pointer;
         text-decoration: none;
     }
