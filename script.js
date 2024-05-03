@@ -54,3 +54,25 @@ function validateForm(event){
 
     return true;
 }
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+apiKey: "AIzaSyCkUwPHwqYA4f0b20KJVaJBvSIe6vO5yic",
+authDomain: "final-2a1ab.firebaseapp.com",
+projectId: "final-2a1ab",
+storageBucket: "final-2a1ab.appspot.com",
+messagingSenderId: "147974766254",
+appId: "1:147974766254:web:7b653693e1061f4c9bf73f",
+measurementId: "G-GBKWFQ9TEV"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
